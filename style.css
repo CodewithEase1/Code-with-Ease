@@ -1,0 +1,279 @@
+/* Base font and background */
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+  background-color: #001f3f; /* Dark navy blue background */
+  color: #dbe9f4; /* Light text */
+  line-height: 1.6;
+  user-select: none;
+}
+
+/* Top Navigation */
+#top-nav {
+  background-color: #012a4a; /* Darker blue */
+  padding: 18px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 15px rgba(0, 58, 99, 0.8);
+  user-select: none;
+}
+
+#top-nav h1 {
+  font-size: 2.8rem;
+  color: #82c0ff;
+  font-weight: 900;
+  user-select: none;
+}
+
+#top-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+#top-nav ul li a,
+.dropbtn {
+  color: #dbe9f4;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  user-select: none;
+}
+
+#top-nav ul li a:hover,
+#top-nav ul li a:focus,
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #335c99; /* Darker blue hover */
+  color: #a6c8ff;
+  outline: none;
+  user-select: none;
+}
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #023e8a; /* Darker rich blue */
+  min-width: 220px;
+  box-shadow: 0 10px 22px rgba(0, 58, 99, 0.8);
+  border-radius: 10px;
+  z-index: 2500;
+  margin-top: 8px;
+  user-select: none;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+  color: #dbe9f4;
+  padding: 14px 22px;
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.35rem;
+  user-select: none;
+}
+
+/* Hover dropdown links */
+.dropdown-content a:hover,
+.dropdown-content a:focus {
+  background-color: #668cff; /* Bright blue */
+  color: #001f3f;
+  outline: none;
+  user-select: none;
+}
+
+/* Show dropdown on hover/focus */
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+/* Main content container */
+main {
+  max-width: 980px;
+  margin: 40px auto 90px auto;
+  padding: 38px 50px;
+  background-color: #0a2342; /* Very dark blue */
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(1, 58, 99, 0.7);
+  color: #dbe9f4;
+  font-weight: 600;
+  line-height: 1.85;
+  user-select: text;
+}
+
+/* Sections spacing */
+.content-section, .language-section {
+  margin-bottom: 80px;
+}
+
+/* Section headings */
+.language-section h2, .content-section h2 {
+  font-size: 3.4rem;
+  margin-bottom: 24px;
+  border-bottom: 4px solid #335c99;
+  padding-bottom: 18px;
+  font-weight: 900;
+  color: #82c0ff;
+  user-select: text;
+}
+
+.language-section h3 {
+  font-size: 2.7rem;
+  margin-top: 36px;
+  margin-bottom: 22px;
+  color: #a6c8ff;
+  font-weight: 800;
+  user-select: text;
+}
+
+/* Paragraphs and lists */
+.language-section p,
+.language-section ul,
+.content-section p,
+.content-section ul {
+  font-size: 1.45rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+  user-select: text;
+}
+
+/* Lists style */
+.language-section ul,
+.content-section ul {
+  list-style: disc inside;
+  margin-left: 32px;
+}
+
+/* Code blocks */
+pre {
+  background-color: #001f3f; /* Dark navy */
+  font-family: 'Fira Code', monospace;
+  font-size: 1.45rem;
+  padding: 30px 36px;
+  border-radius: 22px;
+  overflow-x: auto;
+  box-shadow: inset 0 0 20px #668cff;
+  color: #dbe9f4;
+  user-select: all;
+  margin-bottom: 45px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Contact Section Form Styling */
+#contact form label {
+  display: block;
+  font-size: 1.45rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+  color: #a6c8ff;
+  user-select: none;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+  width: 100%;
+  padding: 20px 26px;
+  margin-bottom: 34px;
+  border-radius: 16px;
+  border: 2px solid #668cff;
+  font-size: 1.45rem;
+  font-family: 'Inter', Arial, sans-serif;
+  transition: box-shadow 0.5s ease;
+  background-color: #0a2342;
+  color: #dbe9f4;
+  font-weight: 700;
+  user-select: text;
+}
+
+#contact form input[type="text"]:focus,
+#contact form input[type="email"]:focus,
+#contact form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 28px #335c99;
+  background-color: #102a53;
+}
+
+#contact form button {
+  background-color: #335c99;
+  color: #dbe9f4;
+  font-weight: 900;
+  font-size: 1.75rem;
+  padding: 20px 56px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  user-select: none;
+}
+
+#contact form button:hover,
+#contact form button:focus {
+  background-color: #82c0ff;
+  color: #001f3f;
+  outline: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: #668cff;
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-top: 50px;
+  padding-bottom: 48px;
+  user-select: none;
+}
+
+/* Responsive design */
+@media (max-width: 1080px) {
+  main {
+    max-width: 95%;
+    padding: 30px 28px;
+  }
+}
+
+@media (max-width: 720px) {
+  #top-nav ul {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  
+  #top-nav h1 {
+    font-size: 2.4rem;
+  }
+  
+  main {
+    font-size: 19px;
+    padding: 26px 20px;
+  }
+  
+  .language-section h2, .content-section h2 {
+    font-size: 2.8rem;
+  }
+  
+  .language-section h3 {
+    font-size: 2.1rem;
+  }
+  
+  pre {
+    font-size: 1.25rem;
+  }
+}
